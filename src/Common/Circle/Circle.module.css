@@ -1,12 +1,14 @@
 .circle {
-    height: 30px;
-    width: 30px;
+    height: 3vh;
+    width: 3vh;
     border: 1px solid black;
     border-radius: 50%;
     text-align: center;
     vertical-align: center;
     position: absolute;
     background-color: white;
-    line-height: 30px;
+    line-height: 3vh;
     z-index: 2;
+    font-size: 2vh;
+    transform: translate(-1.5vh,-1.5vh);
 }

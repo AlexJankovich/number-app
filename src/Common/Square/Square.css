@@ -1,167 +1,134 @@
+.A {
+    left: -20%;
+    top: 50%;
+    position: absolute;
+}
 
-.square {
-    width: 35vh;
-    height: 35vh;
-    border: 2px solid;
-    position: relative;
+.B {
+    left: 50%;
+    top: -20%;
+    position: absolute;
+}
+
+.C {
+    left: 120%;
+    top: 50%;
+    position: absolute;
+}
+
+.D {
+    left: 50%;
+    top: 120%;
+    position: absolute;
 }
 
 .H {
-    left: -1.5vh;
-    top: -1.5vh;
-    position: absolute
+
 }
 
 .I {
     left: 100%;
-    top: -1.5vh;
+    top: 0;
     position: absolute;
-    transform: translate(-1.5vh, 0);
 }
 
 .J {
     left: 100%;
     top: 100%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
 }
 
-.circleK {
-    left: -1.5vh;
+.K {
+    left: 0;
     top: 100%;
     position: absolute;
-    transform: translate(0, -1.5vh);
 }
-.circleE {
+.E {
     left: 50%;
     top: 50%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3
 }
-.circleL {
+.L {
     left: 0%;
     top: 50%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleM {
+.M {
     left: 50%;
     top: 0%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleR {
+.R {
     left: 100%;
     top: 50%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
-.circleF {
+.F {
     left: 50%;
     top: 100%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleN {
+.N {
     left: 25%;
     top: 50%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleO {
+.O {
     left: 50%;
     top: 25%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleP {
+.P {
     left: -10%;
     top: 50%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleS {
+.S {
     left: 75%;
     top: 75%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleQ {
+.Q {
     left: 50%;
     top: -10%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleG {
+.G {
     left: 50%;
     top: 110%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
-.circleU {
+.U {
     left: 62.5%;
     top: 87.5%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
-.circleT {
+.T {
     left: 87.5%;
     top: 62.5%;
     position: absolute;
-    transform: translate(-1.5vh, -1.5vh);
-    z-index: 9;
+    z-index: 3;
 }
 
 
-.line45{
-    padding: 0;
-    height: 0;
-    width: 141%;
-    border-top: 1px solid;
-    transform:rotate(-45deg);
-    position: absolute;
-    top:50%;
-    left: -20.5%
-}
-
-.smallLine45{
-    padding: 0;
-    height: 0;
-    width: 71%;
-    border-top: 1px solid;
-    transform:rotate(-45deg);
-    position: absolute;
-    top:75%;
-    left: 40%
-}
-.oppositeLine45{
-    padding: 0;
-    height: 0;
-    width: 141%;
-    border-top: 1px solid;
-    transform:rotate(45deg);
-    position: absolute;
-    top:50%;
-    left: -20.5%
-}

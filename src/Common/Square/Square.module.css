@@ -1,0 +1,105 @@
+
+.square {
+    width: 35vh;
+    height: 35vh;
+    border: 2px solid;
+    position: relative;
+}
+
+.TopLeftLine45{
+    padding: 0;
+    height: 0;
+    width: 100%;
+    border-top: 2px solid;
+    transform:rotate(-45deg);
+    transform-origin: 0 0;
+    position: absolute;
+    top:50%;
+    left: -20.5%
+}
+
+.BottomLeftLine45{
+    padding: 0;
+    height: 0;
+    width: 100%;
+    border-top: 2px solid;
+    transform:rotate(45deg);
+    transform-origin: 0 0;
+    position: absolute;
+    top:50%;
+    left: -20.5%
+}
+.TopRightLine45{
+    padding: 0;
+    height: 0;
+    width: 100%;
+    border-top: 2px solid;
+    transform:rotate(45deg);
+    transform-origin: 0 0;
+    position: absolute;
+    top:-20.5%;
+    left: 50%
+}
+
+.BottomRightLine45{
+    padding: 0;
+    height: 0;
+    width: 100%;
+    border-top: 2px solid;
+    transform:rotate(-45deg);
+    transform-origin: 0 0;
+    position: absolute;
+    top:120.5%;
+    left: 50%
+}
+
+.line45{
+    padding: 0;
+    height: 0;
+    width: 141%;
+    border-top: 1px solid;
+    transform:rotate(-45deg);
+    position: absolute;
+    top:50%;
+    left: -20.5%
+}
+.line90{
+    padding: 0;
+    height: 0;
+    width: 141%;
+    border-top: 1px solid;
+    transform:rotate(-90deg);
+    position: absolute;
+    top:50%;
+    left: -20.5%
+}
+.line{
+    padding: 0;
+    height: 0;
+    width: 141%;
+    border-top: 1px solid;
+    position: absolute;
+    top:50%;
+    left: -20.5%
+}
+
+.smallLine45{
+    padding: 0;
+    height: 0;
+    width: 71%;
+    border-top: 1px solid;
+    transform:rotate(-45deg);
+    position: absolute;
+    top:75%;
+    left: 40%
+}
+.oppositeLine45{
+    padding: 0;
+    height: 0;
+    width: 141%;
+    border-top: 1px solid;
+    transform:rotate(45deg);
+    position: absolute;
+    top:50%;
+    left: -20.5%
+}
