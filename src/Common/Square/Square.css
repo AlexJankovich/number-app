@@ -1,0 +1,167 @@
+
+.square {
+    width: 35vh;
+    height: 35vh;
+    border: 2px solid;
+    position: relative;
+}
+
+.H {
+    left: -1.5vh;
+    top: -1.5vh;
+    position: absolute
+}
+
+.I {
+    left: 100%;
+    top: -1.5vh;
+    position: absolute;
+    transform: translate(-1.5vh, 0);
+}
+
+.J {
+    left: 100%;
+    top: 100%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+}
+
+.circleK {
+    left: -1.5vh;
+    top: 100%;
+    position: absolute;
+    transform: translate(0, -1.5vh);
+}
+.circleE {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+.circleL {
+    left: 0%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleM {
+    left: 50%;
+    top: 0%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleR {
+    left: 100%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+.circleF {
+    left: 50%;
+    top: 100%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleN {
+    left: 25%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleO {
+    left: 50%;
+    top: 25%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleP {
+    left: -10%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleS {
+    left: 75%;
+    top: 75%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleQ {
+    left: 50%;
+    top: -10%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleG {
+    left: 50%;
+    top: 110%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+.circleU {
+    left: 62.5%;
+    top: 87.5%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+.circleT {
+    left: 87.5%;
+    top: 62.5%;
+    position: absolute;
+    transform: translate(-1.5vh, -1.5vh);
+    z-index: 9;
+}
+
+
+.line45{
+    padding: 0;
+    height: 0;
+    width: 141%;
+    border-top: 1px solid;
+    transform:rotate(-45deg);
+    position: absolute;
+    top:50%;
+    left: -20.5%
+}
+
+.smallLine45{
+    padding: 0;
+    height: 0;
+    width: 71%;
+    border-top: 1px solid;
+    transform:rotate(-45deg);
+    position: absolute;
+    top:75%;
+    left: 40%
+}
+.oppositeLine45{
+    padding: 0;
+    height: 0;
+    width: 141%;
+    border-top: 1px solid;
+    transform:rotate(45deg);
+    position: absolute;
+    top:50%;
+    left: -20.5%
+}
