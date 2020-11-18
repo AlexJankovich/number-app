@@ -1,4 +1,3 @@
-
 type ObjDataType = {
     [key: string]: () => number
 }
@@ -10,13 +9,14 @@ export type ObjType = {
 export const DataObj: ObjType = (x: Array<string>) => {
     return {
         A() {
-            return reCalcValue(+x[2])
+            return reCalcValue(+x[0])
         },
         B() {
             return reCalcValue(+x[1])
         },
         C() {
-            return reCalcValue(+x[0])
+            console.log(reCalcValue(+x[2]))
+            return reCalcValue(+x[2])
         },
         D() {
             return reCalcValue(this.A() + this.B() + this.C())
@@ -76,6 +76,25 @@ export const DataObj: ObjType = (x: Array<string>) => {
 }
 
 const reCalcValue = (x: number): number => {
+
+    if (x > 31) {
+        let newValue = x.toString().split('')
+        let sum = 0
+        for (let i = 0; i < newValue.length; i++) {
+            sum = +newValue[i] + sum
+        }
+        let newX = sum
+        if (newX > 22) {
+            let newValue = newX.toString().split('')
+            let sum = 0
+            for (let i = 0; i < newValue.length; i++) {
+                sum = +newValue[i] + sum
+            }
+            return sum
+        } else {
+            return sum
+        }
+    }
     if (x > 22) {
         let newValue = x.toString().split('')
         let sum = 0
@@ -172,11 +191,11 @@ export const DataObj2: ObjType = (x) => {
     }
 }
 
-export const TalentsVar:Array<uiVarType> = [
+export const TalentsVar: Array<uiVarType> = [
     {
-        A:{
-            title:'',
-            text:''
+        A: {
+            title: '',
+            text: ''
         }
 
     },
@@ -195,50 +214,66 @@ export const TalentsVar:Array<uiVarType> = [
 ]
 
 export const KarmicVar: Array<uiVarType> = [
-    {D: {
-            title:'',
-            text:''
-        }},
-    {G: {
-            title:'',
-            text:''
-        }},
-    {F: {
-            title:'',
-            text:''
-        }}
+    {
+        D: {
+            title: '',
+            text: ''
+        }
+    },
+    {
+        G: {
+            title: '',
+            text: ''
+        }
+    },
+    {
+        F: {
+            title: '',
+            text: ''
+        }
+    }
 ]
 
 export const Someone: Array<uiVarType> = [
-    {V:{
-            title:'',
-            text:''
-        }},
-    {W: {
-            title:'',
-            text:''
-        }},
-    {X: {
-            title:'',
-            text:''
-        }}
+    {
+        V: {
+            title: '',
+            text: ''
+        }
+    },
+    {
+        W: {
+            title: '',
+            text: ''
+        }
+    },
+    {
+        X: {
+            title: '',
+            text: ''
+        }
+    }
 ]
 
 export const SomeonePowerVar: Array<uiVarType> = [
-    {E: {
-            title:'',
-            text:''
-        }},
+    {
+        E: {
+            title: '',
+            text: ''
+        }
+    },
 ]
 
 export const EnergyVar: Array<uiVarType> = [
-    {HH: {
-            title:'',
-            text:''
-        }},
+    {
+        HH: {
+            title: '',
+            text: ''
+        }
+    },
 ]
 
-export type contentType={
+export type contentType = {
     title: string
     text: string
 }
@@ -249,10 +284,10 @@ export type uiVarType = {
 
 export function TalentsArray(x: Array<uiVarType>, y: ObjType, dateValue: Array<string>, t: Array<contentType>) {
     if (dateValue.length < 3) return
-    let newArr: any  = []
+    let newArr: any = []
     for (let i = 0; i < x.length; i++) {
         newArr = [...newArr, {[`${Object.keys(x[i])}`]: DiffCase(y(dateValue)[`${Object.keys(x[i])}`](), t)}]
-        }
+    }
 
     return newArr
 }

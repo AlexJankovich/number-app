@@ -7,7 +7,7 @@ type DescriptionPropsType = {
 }
 
 export const Description = (props: DescriptionPropsType) => {
-
+debugger
     const content = props.Data.map((i, index) => {
             return <div key={index}>
                 <h3>{Object.keys(i)[0]} : {i[Object.keys(i)[0]].title}</h3>

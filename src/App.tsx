@@ -19,7 +19,6 @@ function App() {
 
     const [newData, setNewData] = useState<Array<string>>([])
 
-
     type InputsTypes = {
         day: string
         month: string
@@ -29,9 +28,11 @@ function App() {
     const {register, handleSubmit, watch, errors} = useForm<InputsTypes>()
 
     const calcKart = (data: InputsTypes) => {
-        setNewData([...Object.values(data).reverse()])
+        console.log(Object.values(data))
+        setNewData(Object.values(data))
     }
 
+    console.log(newData)
     return (
         <>
             <div className='input'>
@@ -79,26 +80,28 @@ function App() {
                     </div>
                 </div>
             </div>
-            {newData.length === 3 ? <>
-                <div className='description'>
-                    <Description
-                        Data={TalentsArray(TalentsVar, DataObj, newData, TalentsText)}
-                        title={'1. Таланты по дате рождения:'}
-                    />
-                </div>
-                <div className='description'>
-                    <Description
-                        Data={TalentsArray(SomeonePowerVar, DataObj, newData, SomeonePower)}
-                        title={'2. Зона комфорта (ресурса), вход в личную силу-успех (какие действия открывают и что именно открывается)'}
-                    />
-                </div>
-                <div className='description'>
-                    <Description
-                        Data={TalentsArray(KarmicVar, DataObj, newData, KarmicText)}
-                        title={'5. Карма по предыдущим жизням (сначала идёт приблизительное описание того, что там было)'}
-                    />
-                </div>
-            </> : null}
+            <>
+                    <div className='description'>
+                        {newData.length === 3 ?
+                            <Description
+                                Data={TalentsArray(TalentsVar, DataObj, newData, TalentsText)}
+                                title={'1. Таланты по дате рождения:'}
+                            /> : null}
+                    </div>
+                    <div className='description'>
+                        {newData.length === 3 ? <Description
+                            Data={TalentsArray(SomeonePowerVar, DataObj, newData, SomeonePower)}
+                            title={'2. Зона комфорта (ресурса), вход в личную силу-успех (какие действия открывают и что именно открывается)'}
+                        /> : null}
+                    </div>
+                    <div className='description'>
+                        {newData.length === 3 ? <Description
+                                Data={TalentsArray(KarmicVar, DataObj, newData, KarmicText)}
+                                title={'5. Карма по предыдущим жизням (сначала идёт приблизительное описание того, что там было)'}
+                            />
+                            : null}
+                    </div>
+                </>
         </>
     );
 }
