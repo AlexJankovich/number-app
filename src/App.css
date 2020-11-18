@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -36,14 +37,23 @@
     justify-content: center;
     margin:0 auto ;
     padding-top: 10%;
-    width: 25%;
+    width:35%;
     align-items: center;
 }
 
 .input input{
     font-size: 20px;
     margin: 20px 0;
+    width: 120px;
+    /*display: block;*/
+    text-align: center;
 }
+
+.input form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
 .input button{
     width: 120px;
@@ -66,7 +76,6 @@
     background-color: cornsilk;
     border-bottom: 2px solid gray;
 }
-
 
 .description h3 {
     padding: 10px 0;
