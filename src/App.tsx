@@ -3,7 +3,7 @@ import './App.css';
 import {Description} from './Common/Description/Description';
 import {Square} from './Common/Square/Square';
 import {
-    DataObj, KarmicVar, SomeonePowerVar,
+    DataObj, DataObj2, FamilyKarmicManVar, FamilyKarmicWomanVar, KarmicVar, LmLlVar, OOVar, SomeonePowerVar,
     // DataObj2,
     // EnergyVar,
     // KarmicVar,
@@ -12,7 +12,16 @@ import {
     TalentsArray,
     TalentsVar
 } from './Utils/data';
-import {Energy, KarmicText, SomeoneDestiny, SomeonePower, TalentsText} from './assets/text';
+import {
+    Energy,
+    FamilyKarmicManText,
+    FamilyKarmicWomanText,
+    KarmicText, LmLL,
+    OO,
+    SomeoneDestiny,
+    SomeonePower,
+    TalentsText
+} from './assets/text';
 import {useForm} from 'react-hook-form';
 
 function App() {
@@ -80,7 +89,8 @@ function App() {
                     </div>
                 </div>
             </div>
-            <>
+            {newData.length === 3
+                ? <>
                     <div className='description'>
                         {newData.length === 3 ?
                             <Description
@@ -94,6 +104,46 @@ function App() {
                             title={'2. Зона комфорта (ресурса), вход в личную силу-успех (какие действия открывают и что именно открывается)'}
                         /> : null}
                     </div>
+
+                    <div className='description'>
+                        {newData.length === 3 ? <Description
+                            Data={TalentsArray(FamilyKarmicManVar, DataObj, newData, FamilyKarmicManText)}
+                            title={'3.1 Карма рода. Мужчины.'}
+                        /> : null}
+                    </div>
+
+                    <div className='description'>
+                        {newData.length === 3 ? <Description
+                            Data={TalentsArray(FamilyKarmicWomanVar, DataObj, newData, FamilyKarmicWomanText)}
+                            title={'3.2 Карма рода. Женщины.'}
+                        /> : null}
+                    </div>
+
+                    <div className='description'>
+                        {newData.length === 3 ? <Description
+                            Data={TalentsArray(LmLlVar, DataObj, newData, LmLL)}
+                            title={'4. Горловая чакра.'}
+                        /> : null}
+                    </div>
+
+                    <div className='description'>
+                        {newData.length === 3 ? <Description
+                            Data={TalentsArray(OOVar, DataObj, newData, OO)}
+                            title={'4.1 Это число энергии, которое сдерживает открытие горловой чакры.'}
+                        /> : null}
+                        <button style={{
+                            display: 'inline-block',
+                            width: '30%',
+                            alignSelf: 'center',
+                            marginTop:'1rem'
+                        }}>
+                            <a href="https://drive.google.com/folderview?id=1EHLCEz7CQSXG2HNE6HP14GUezZIyhFMv">
+                                Ссылка на медитацию.
+                            </a>
+                        </button>
+                    </div>
+
+
                     <div className='description'>
                         {newData.length === 3 ? <Description
                                 Data={TalentsArray(KarmicVar, DataObj, newData, KarmicText)}
@@ -102,6 +152,7 @@ function App() {
                             : null}
                     </div>
                 </>
+                : null}
         </>
     );
 }

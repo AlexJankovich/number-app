@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
 }
 
 .wrapper{
@@ -21,10 +20,6 @@
     justify-content: center;
     align-items: center;
 }
-
-/*.square {*/
-/*  position: absolute;*/
-/*}*/
 
 .square45 {
     position: absolute;
@@ -45,7 +40,6 @@
     font-size: 20px;
     margin: 20px 0;
     width: 120px;
-    /*display: block;*/
     text-align: center;
 }
 
@@ -76,6 +70,25 @@
     background-color: cornsilk;
     border-bottom: 2px solid gray;
 }
+
+.descriptionContent {
+  padding: 0 2rem;
+    }
+
+.descriptionContent .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.descriptionContent  button {
+    height: 2rem;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid gray;
+    float: right;
+    }
 
 .description h3 {
     padding: 10px 0;

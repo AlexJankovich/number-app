@@ -1,3 +1,4 @@
+
 type ObjDataType = {
     [key: string]: () => number
 }
@@ -72,6 +73,81 @@ export const DataObj: ObjType = (x: Array<string>) => {
         U() {
             return reCalcValue(this.S() + this.F())
         },
+        V() {
+            return reCalcValue(this.B() + this.D())
+        },
+        W() {
+            return reCalcValue(this.A() + this.C())
+        },
+        X() {
+            return reCalcValue(this.W() + this.V())
+        },
+        Y() {
+            return reCalcValue(this.H() + this.J())
+        },
+        Z() {
+            return reCalcValue(this.I() + this.K())
+        },
+        AA() {
+            return reCalcValue(this.Y() + this.Z())
+        },
+        BB() {
+            return reCalcValue(this.X() + this.AA())
+        },
+        LL() {
+            return reCalcValue(this.L() + this.M())
+        },
+        OO() {
+            return reCalcValue(this.L() + this.M() + this.LL())
+        },
+        MM() {
+            return reCalcValue(this.N() + this.O())
+        },
+        PP() {
+            return reCalcValue(this.N() + this.O() + this.MM())
+        },
+        NN() {
+            return reCalcValue(this.P() + this.Q())
+        },
+        QQ() {
+            return reCalcValue(this.P() + this.Q() + this.NN())
+        },
+        SS() {
+            return reCalcValue(this.E() + this.E())
+        },
+        WW() {
+            return reCalcValue(this.E() + this.E() + this.SS())
+        },
+        TT() {
+            return reCalcValue(this.A() + this.B())
+        },
+        XX() {
+            return reCalcValue(this.A() + this.B() + this.TT())
+        },
+        VV() {
+            return reCalcValue(this.C() + this.D())
+        },
+        ZZ() {
+            return reCalcValue(this.C() + this.D() + this.VV())
+        },
+        RR() {
+            return reCalcValue(this.F() + this.S() + this.R())
+        },
+        ff() {
+            return reCalcValue(this.A() + this.B() + this.C() + this.D() + this.F())
+        },
+        EE() {
+            return reCalcValue(this.ff() + this.E())
+        },
+        HH() {
+            return reCalcValue(this.ff() + this.EE())
+        },
+        CC() {
+            return reCalcValue(this.B() + this.C() + this.D() + this.F())
+        },
+        KK() {
+            return reCalcValue(this.EE() + this.ff() + this.CC() + this.A())
+        },
     }
 }
 
@@ -112,83 +188,7 @@ export const DataObj2: ObjType = (x) => {
 
     const Data = DataObj(x)
 
-    return {
-        V() {
-            return reCalcValue(Data.B() + Data.D())
-        },
-        W() {
-            return reCalcValue(Data.A() + Data.C())
-        },
-        X() {
-            return reCalcValue(this.W() + this.V())
-        },
-        Y() {
-            return reCalcValue(Data.H() + Data.J())
-        },
-        Z() {
-            return reCalcValue(Data.I() + Data.K())
-        },
-        AA() {
-            return reCalcValue(this.Y() + this.Z())
-        },
-        BB() {
-            return reCalcValue(this.X() + this.AA())
-        },
-        LL() {
-            return reCalcValue(Data.L() + Data.M())
-        },
-        OO() {
-            return reCalcValue(Data.L() + Data.M() + this.LL())
-        },
-        MM() {
-            return reCalcValue(Data.N() + Data.O())
-        },
-        PP() {
-            return reCalcValue(Data.N() + Data.O() + this.MM())
-        },
-        NN() {
-            return reCalcValue(Data.P() + Data.Q())
-        },
-        QQ() {
-            return reCalcValue(Data.P() + Data.Q() + this.NN())
-        },
-        SS() {
-            return reCalcValue(Data.E() + Data.E())
-        },
-        WW() {
-            return reCalcValue(Data.E() + Data.E() + this.SS())
-        },
-        TT() {
-            return reCalcValue(Data.A() + Data.B())
-        },
-        XX() {
-            return reCalcValue(Data.A() + Data.B() + this.TT())
-        },
-        VV() {
-            return reCalcValue(Data.C() + Data.D())
-        },
-        ZZ() {
-            return reCalcValue(Data.C() + Data.D() + this.VV())
-        },
-        RR() {
-            return reCalcValue(Data.F() + Data.S() + Data.R())
-        },
-        ff() {
-            return reCalcValue(Data.A() + Data.B() + Data.C() + Data.D() + Data.F())
-        },
-        EE() {
-            return reCalcValue(this.ff() + Data.E())
-        },
-        HH() {
-            return reCalcValue(this.ff() + this.EE())
-        },
-        CC() {
-            return reCalcValue(Data.B() + Data.C() + Data.D() + Data.F())
-        },
-        KK() {
-            return reCalcValue(this.EE() + this.ff() + this.CC() + Data.A())
-        },
-    }
+    return {}
 }
 
 export const TalentsVar: Array<uiVarType> = [
@@ -212,7 +212,42 @@ export const TalentsVar: Array<uiVarType> = [
         }
     }
 ]
+export const FamilyKarmicManVar: Array<uiVarType> = [
+    {
+        H: {
+            title: '',
+            text: ''
+        }
 
+    },
+    {
+        I: {
+            title: '',
+            text: ''
+        }
+    }]
+export const FamilyKarmicWomanVar: Array<uiVarType> = [
+    {
+        J: {
+            title: '',
+            text: ''
+        }
+    },
+    {
+        K: {
+            title: '',
+            text: ''
+        }
+    }
+]
+export const LmLlVar: Array<uiVarType> = [
+    {M: {title: '', text: ''}},
+    {L: {title: '', text: ''}},
+    {LL: {title: '', text: ''}}
+]
+export const OOVar: Array<uiVarType> = [
+    {OO: {title: '', text: ''}},
+]
 export const KarmicVar: Array<uiVarType> = [
     {
         D: {
@@ -222,12 +257,6 @@ export const KarmicVar: Array<uiVarType> = [
     },
     {
         G: {
-            title: '',
-            text: ''
-        }
-    },
-    {
-        F: {
             title: '',
             text: ''
         }
