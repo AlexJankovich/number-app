@@ -4,12 +4,14 @@ import './App.css';
 import {
   ABtTxXtext,
   BB,
-  CDvVzZtext,
+  CDvVzZtext, DGFtext,
   EEsSwWtext,
   FamilyKarmicManText,
   FamilyKarmicWomanText,
+  FF, Ftext,
   HH,
   KarmicText,
+  KKtext,
   LmLL,
   NOmMpPText,
   OOtext,
@@ -19,6 +21,7 @@ import {
   S,
   SomeonePower,
   TalentsText,
+  Utext,
   VWX,
   YZaA
 } from './assets/text';
@@ -29,12 +32,13 @@ import {
   ABtTxXvar,
   BBvar,
   CDvVzZvar,
-  DataObj,
+  DataObj, DGFvar,
   EEsSwWvar,
   FamilyKarmicManVar,
   FamilyKarmicWomanVar,
+  FFvar, Fvar,
   HHvar,
-  KarmicVar,
+  KarmicVar, KKvar,
   LmLlVar,
   NOmMpPvar,
   OOVar,
@@ -45,7 +49,7 @@ import {
   SomeonePowerVar,
   Svar,
   TalentsArray,
-  TalentsVar,
+  TalentsVar, Uvar,
   VWXvar,
   YZaAvar,
 } from './Utils/data';
@@ -60,7 +64,7 @@ function App() {
     year: string
   }
 
-  const {register, handleSubmit, watch, errors} = useForm<InputsTypes>();
+  const {register, handleSubmit, errors} = useForm<InputsTypes>();
 
   const calcKart = (data: InputsTypes) => {
     console.log(Object.values(data));
@@ -142,9 +146,22 @@ function App() {
             title={'4.1 Это число энергии, которое сдерживает открытие горловой чакры.'}
             content={OOtext}
           />
+          <DescriptionWithLink
+            Data={SimpleTalentsArray(DGFvar, DataObj, newData)}
+            title={'5 Карма по предыдущим жизням (сначала идёт приблизительное описание того, что там было)'}
+            content={DGFtext}
+          />
           <Description
             Data={TalentsArray(KarmicVar, DataObj, newData, KarmicText)}
-            title={'5. Карма по предыдущим жизням (сначала идёт приблизительное описание того, что там было)'}
+            title={'5.1 Карма по предыдущим жизням '}
+          />
+          <Description
+            Data={TalentsArray(Fvar, DataObj, newData, Ftext)}
+            title={'5.2 Кармические задачи '}
+          />
+          <Description
+            Data={TalentsArray(Uvar, DataObj, newData, Utext)}
+            title={'5.3 Линия оношений '}
           />
           <Description
             Data={TalentsArray(Svar, DataObj, newData, S)}
@@ -200,6 +217,15 @@ function App() {
           <Description
             Data={TalentsArray(HHvar, DataObj, newData, HH)}
             title={'17. Энергия-цифра, которая сдерживает освобождение от всего негативного'}
+          />
+          <Description
+            Data={TalentsArray(FFvar, DataObj, newData, FF)}
+            title={'18. Энергия пробуждения'}
+          />
+          <DescriptionWithLink
+            Data={SimpleTalentsArray(KKvar, DataObj, newData)}
+            title={'19. Энергия космоса'}
+            content={KKtext}
           />
         </>
         : null}

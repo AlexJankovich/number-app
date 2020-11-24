@@ -132,20 +132,20 @@ export const DataObj: ObjType = (x: Array<string>) => {
     RR() {
       return reCalcValue(this.F() + this.S() + this.R());
     },
-    ff() {
+    FF() {
       return reCalcValue(this.A() + this.B() + this.C() + this.D() + this.F());
     },
     EE() {
-      return reCalcValue(this.ff() + this.E());
+      return reCalcValue(this.FF() + this.E());
     },
     HH() {
-      return reCalcValue(this.ff() + this.EE());
+      return reCalcValue(this.FF() + this.EE());
     },
     CC() {
       return reCalcValue(this.B() + this.C() + this.D() + this.F());
     },
     KK() {
-      return reCalcValue(this.EE() + this.ff() + this.CC() + this.A());
+      return reCalcValue(this.EE() + this.FF() + this.CC() + this.A());
     },
   };
 };
@@ -305,6 +305,22 @@ export const Svar: Array<uiVarType> = [
     }
   }
 ];
+export const Fvar: Array<uiVarType> = [
+  {
+    F: {
+      title: '',
+      text: ''
+    }
+  }
+];
+export const Uvar: Array<uiVarType> = [
+  {
+    U: {
+      title: '',
+      text: ''
+    }
+  }
+];
 export const RTvar: Array<uiVarType> = [
   {
     R: {
@@ -334,6 +350,26 @@ export const VWXvar: Array<uiVarType> = [
   },
   {
     X: {
+      title: '',
+      text: ''
+    },
+  },
+];
+export const DGFvar: Array<uiVarType> = [
+  {
+    D: {
+      title: '',
+      text: ''
+    },
+  },
+  {
+    G: {
+      title: '',
+      text: ''
+    },
+  },
+  {
+    F: {
       title: '',
       text: ''
     },
@@ -370,6 +406,14 @@ export const BBvar: Array<uiVarType> = [
 export const HHvar: Array<uiVarType> = [
   {
     HH: {
+      title: '',
+      text: ''
+    },
+  }
+];
+export const FFvar: Array<uiVarType> = [
+  {
+    FF: {
       title: '',
       text: ''
     },
@@ -508,6 +552,14 @@ export const ABtTxXvar: Array<uiVarType> = [
   },
   {
     XX: {
+      title: '',
+      text: ''
+    },
+  },
+];
+export const KKvar: Array<uiVarType> = [
+  {
+    KK: {
       title: '',
       text: ''
     },

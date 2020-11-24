@@ -48,14 +48,14 @@ export const DescriptionWithLink = (props: DescriptionWithLinkPropsType) => {
       <div style={style}>
         {content}
         <span>{props.content.text}</span>
-        {!hidden?<button style={{
+        {!hidden&&props.content.link?<button style={{
           display: 'inline-block',
-          width: '30%',
+          // width: '20%',
           alignSelf: 'center',
           marginTop: '1rem'
         }}>
           <a href={props.content.link}>
-            Ссылка на медитацию.
+            Ссылка.
           </a>
         </button>:null}
       </div>
