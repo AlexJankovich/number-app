@@ -60,8 +60,20 @@
     padding: 10px;
 }
 
-.description{
-    padding: 15px 0;
+/*.description{*/
+/*    padding: 15px 0;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    width: 90%;*/
+/*    max-width: 800px;*/
+/*    margin: 0 auto;*/
+/*    background-color: cornsilk;*/
+/*    border-bottom: 2px solid gray;*/
+/*}*/
+
+.descriptionContent {
+  /*padding: 0 2rem;*/
+    padding: 15px 2rem;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -69,10 +81,6 @@
     margin: 0 auto;
     background-color: cornsilk;
     border-bottom: 2px solid gray;
-}
-
-.descriptionContent {
-  padding: 0 2rem;
     }
 
 .descriptionContent .title {
