@@ -157,7 +157,7 @@ function App() {
           />
           <Description
             Data={TalentsArray(Fvar, DataObj, newData, Ftext)}
-            title={'5.2 Кармические задачи '}
+            title={'5.2 Кармические задачи. Вход в отношения '}
           />
           <Description
             Data={TalentsArray(Uvar, DataObj, newData, Utext)}

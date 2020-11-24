@@ -499,7 +499,7 @@ export const EEsSwWvar: Array<uiVarType> = [
     },
   },
   {
-    VV: {
+    WW: {
       title: '',
       text: ''
     },
