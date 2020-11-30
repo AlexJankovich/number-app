@@ -13,11 +13,13 @@ export const Square = (props:SquarePropsType) => {
 
     const RenderArr:any = []
 
-    for (let i in Data) {
+    Object.keys(Data).slice(0,21).forEach((i)=>{
         RenderArr.push( <div className={`${i}`} key={i}>
             <Circle name={Data[i]()||0}/>
         </div>)
-    }
+        console.log(Data[i]())
+    })
+
     return (
         <>
             <div className={s.square}>

@@ -15,7 +15,6 @@ export const DataObj: ObjType = (x: Array<string>) => {
       return reCalcValue(+x[1]);
     },
     C() {
-      console.log(reCalcValue(+x[2]));
       return reCalcValue(+x[2]);
     },
     D() {
