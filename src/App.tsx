@@ -67,11 +67,9 @@ function App() {
   const {register, handleSubmit, errors} = useForm<InputsTypes>();
 
   const calcKart = (data: InputsTypes) => {
-    console.log(Object.values(data));
     setNewData(Object.values(data));
   };
 
-  console.log(newData);
   return (
     <>
       <div className='input'>

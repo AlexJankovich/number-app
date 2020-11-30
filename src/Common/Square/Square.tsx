@@ -17,7 +17,6 @@ export const Square = (props:SquarePropsType) => {
         RenderArr.push( <div className={`${i}`} key={i}>
             <Circle name={Data[i]()||0}/>
         </div>)
-        console.log(Data[i]())
     })
 
     return (
