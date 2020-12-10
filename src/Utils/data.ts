@@ -567,7 +567,7 @@ export const KKvar: Array<uiVarType> = [
 
 export type contentType = {
   title: string
-  text: string
+  text: any
 }
 
 export type linkContentType = {

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {uiVarType} from '../../Utils/data';
+import {HTMLWrapper} from '../HTMLWrapper';
 
 type DescriptionPropsType = {
     Data: Array<uiVarType>
@@ -34,7 +35,8 @@ export const Description = (props: DescriptionPropsType) => {
     const content = props.Data.map((i, index) => {
         return <div key={index}>
             <h3>{Object.keys(i)[0]} : {i[Object.keys(i)[0]].title}</h3>
-            <div>{i[Object.keys(i)[0]].text}</div>
+            {/*<div>{i[Object.keys(i)[0]].text}</div>*/}
+            <HTMLWrapper text={i[Object.keys(i)[0]].text}/>
         </div>
     })
     return (

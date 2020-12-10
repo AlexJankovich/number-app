@@ -4,11 +4,13 @@ import './App.css';
 import {
   ABtTxXtext,
   BB,
-  CDvVzZtext, DGFtext,
+  CDvVzZtext,
+  DGFtext,
   EEsSwWtext,
   FamilyKarmicManText,
   FamilyKarmicWomanText,
-  FF, Ftext,
+  FF,
+  Ftext,
   HH,
   KarmicText,
   KKtext,
@@ -32,13 +34,16 @@ import {
   ABtTxXvar,
   BBvar,
   CDvVzZvar,
-  DataObj, DGFvar,
+  DataObj,
+  DGFvar,
   EEsSwWvar,
   FamilyKarmicManVar,
   FamilyKarmicWomanVar,
-  FFvar, Fvar,
+  FFvar,
+  Fvar,
   HHvar,
-  KarmicVar, KKvar,
+  KarmicVar,
+  KKvar,
   LmLlVar,
   NOmMpPvar,
   OOVar,
@@ -49,7 +54,8 @@ import {
   SomeonePowerVar,
   Svar,
   TalentsArray,
-  TalentsVar, Uvar,
+  TalentsVar,
+  Uvar,
   VWXvar,
   YZaAvar,
 } from './Utils/data';
@@ -227,6 +233,7 @@ function App() {
           />
         </>
         : null}
+        {/*<HTMLWrapper text={text19}/>*/}
     </>
   );
 }
