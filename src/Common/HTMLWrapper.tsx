@@ -8,7 +8,6 @@ export const HTMLWrapper = (props:HTMLWrapperType) => {
   return (
     <>
       {props.text}
-
     </>
   )
 }

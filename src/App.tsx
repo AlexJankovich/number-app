@@ -29,6 +29,8 @@ import {
 } from './assets/text';
 import {Description} from './Common/Description/Description';
 import {DescriptionWithLink} from './Common/DescriptionWithLinks/DescriptionWithLink';
+import {Footer} from './Common/footer/Footer';
+import {Header} from './Common/header/Header';
 import {Square} from './Common/Square/Square';
 import {
   ABtTxXvar,
@@ -78,6 +80,7 @@ function App() {
 
   return (
     <>
+      <Header/>
       <div className='input'>
         <form onSubmit={handleSubmit(calcKart)}>
           <label htmlFor="">Введите день рождение</label>
@@ -233,7 +236,7 @@ function App() {
           />
         </>
         : null}
-        {/*<HTMLWrapper text={text19}/>*/}
+      <Footer/>
     </>
   );
 }
