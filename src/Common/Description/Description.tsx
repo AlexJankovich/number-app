@@ -10,8 +10,8 @@ type DescriptionPropsType = {
 export const Description = (props: DescriptionPropsType) => {
 
   let Collapsed = {
-    transitionProperty: 'display',
-    display: 'none',
+   maxHeight: '1px',
+    transition:'max-height 2s',
     overflow: 'hidden',
   };
 
@@ -23,16 +23,19 @@ export const Description = (props: DescriptionPropsType) => {
   const collapseHandler = () => {
     if (hidden) {
       setHidden(false);
-      setStyle({...Collapsed, display: 'block'});
+      setStyle({...Collapsed,
+        maxHeight:`${5000}px`
+      });
     } else {
-      setStyle({...Collapsed, display: 'none'});
+      setStyle({...Collapsed,
+        maxHeight: '1px'
+      });
       setHidden(true);
     }
-
   };
 
   const content = props.Data.map((i, index) => {
-    return <div key={index}>
+    return <div key={index} style={style}>
       <h3>{Object.keys(i)[0]} : {i[Object.keys(i)[0]].title}</h3>
       <HTMLWrapper text={i[Object.keys(i)[0]].text}/>
     </div>;
@@ -45,7 +48,7 @@ export const Description = (props: DescriptionPropsType) => {
           {hidden ? 'Подробнее' : 'Скрыть'}
         </button>
       </div>
-      <div style={style}>{content}</div>
+      {content}
     </div>
   );
 };

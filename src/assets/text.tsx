@@ -1,25 +1,27 @@
 import React from 'react';
 import {contentType, linkContentType} from '../Utils/data';
-import { part10 } from './F/part10';
-import { part11 } from './F/part11';
+import {part10} from './F/part10';
+import {part11} from './F/part11';
 import {part12} from './F/part12';
 import {part13} from './F/part13';
-import { part14 } from './F/part14';
+import {part14} from './F/part14';
 import {part15} from './F/part15';
-import { part16 } from './F/part16';
-import { part17 } from './F/part17';
-import { part18 } from './F/part18';
+import {part16} from './F/part16';
+import {part17} from './F/part17';
+import {part18} from './F/part18';
 import {part19} from './F/part19';
 import {part20} from './F/part20';
 import {part21} from './F/part21';
-import { part22 } from './F/part22';
-import { part3 } from './F/part3';
+import {part22} from './F/part22';
+import {part3} from './F/part3';
 import {part4} from './F/part4';
 import {part5} from './F/part5';
 import {part6} from './F/part6';
 import {part7} from './F/part7';
 import {part8} from './F/part8';
 import {part9} from './F/part9';
+
+
 // ABC Таланты по дате рождения:
 export const TalentsText: Array<contentType> = [
 
