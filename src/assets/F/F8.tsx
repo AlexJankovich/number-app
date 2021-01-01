@@ -1,6 +1,6 @@
 import React from "react";
 
-export const part8 = <>
+export const f8 = <>
 
   <p><b>Кармическая задача по 8:</b></p>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const part4 = <>
+export const f4 = <>
   <p>
     <b>Кармические задачи для мужчин по 4.</b>
   </p>

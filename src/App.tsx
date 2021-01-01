@@ -22,8 +22,7 @@ import {
   RT,
   S,
   SomeonePower,
-  TalentsText,
-  Utext,
+  TalentsText, UText,
   VWX,
   YZaA
 } from './assets/text';
@@ -61,6 +60,7 @@ import {
   VWXvar,
   YZaAvar,
 } from './Utils/data';
+
 
 function App() {
 
@@ -167,7 +167,7 @@ function App() {
             title={'5.2 Кармические задачи. Вход в отношения '}
           />
           <Description
-            Data={TalentsArray(Uvar, DataObj, newData, Utext)}
+            Data={TalentsArray(Uvar, DataObj, newData, UText)}
             title={'5.3 Линия оношений '}
           />
           <Description

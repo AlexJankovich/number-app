@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export const part5 = <>
+export const f5 = <>
   <p><b>Кармические задачи по 5:</b></p>
 
   <p>Расширять мировоззрение.</p>
