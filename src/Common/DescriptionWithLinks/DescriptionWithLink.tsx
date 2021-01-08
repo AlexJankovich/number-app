@@ -1,34 +1,20 @@
 import React, {useState} from 'react';
 import {linkContentType} from '../../Utils/data';
+// @ts-ignore
+import AnimakitExpander from 'animakit-expander';
 
 type DescriptionWithLinkPropsType = {
-  Data: Array<{[key:string]:number}>
+  Data: Array<{ [key: string]: number }>
   title: string
   content: linkContentType
 }
 
 export const DescriptionWithLink = (props: DescriptionWithLinkPropsType) => {
 
-  let Collapsed = {
-    transitionProperty: 'display',
-    display: 'none',
-    overflow: 'hidden',
-  };
-
   const [hidden, setHidden] = useState(true);
 
-  const [style, setStyle] = useState(Collapsed);
-
-
   const collapseHandler = () => {
-    if (hidden) {
-      setHidden(false);
-      setStyle({...Collapsed, display: 'block'});
-    } else {
-      setStyle({...Collapsed, display: 'none'});
-      setHidden(true);
-    }
-
+    setHidden(!hidden)
   };
 
   const content = props.Data.map((i, index) => {
@@ -45,20 +31,19 @@ export const DescriptionWithLink = (props: DescriptionWithLinkPropsType) => {
           {hidden ? 'Подробнее' : 'Скрыть'}
         </button>
       </div>
-      <div style={style}>
-        {content}
-        <span>{props.content.text}</span>
-        {!hidden&&props.content.link?<button style={{
-          display: 'inline-block',
-          // width: '20%',
-          alignSelf: 'center',
-          marginTop: '1rem'
-        }}>
-          <a href={props.content.link}>
-            Ссылка.
-          </a>
-        </button>:null}
-      </div>
+        <AnimakitExpander expanded={!hidden} duration={1000}>
+          {content}
+          <span>{props.content.text}</span>
+          {!hidden && props.content.link ? <button style={{
+            display: 'inline-block',
+            alignSelf: 'center',
+            marginTop: '1rem'
+          }}>
+            <a href={props.content.link}>
+              Ссылка.
+            </a>
+          </button> : null}
+        </AnimakitExpander>
     </div>
   );
 };
