@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/number-app/static/css/main.48109129.chunk.css",
-    "main.js": "/number-app/static/js/main.86f82423.chunk.js",
-    "main.js.map": "/number-app/static/js/main.86f82423.chunk.js.map",
-    "runtime-main.js": "/number-app/static/js/runtime-main.36578b31.js",
-    "runtime-main.js.map": "/number-app/static/js/runtime-main.36578b31.js.map",
-    "static/js/2.4fcab02c.chunk.js": "/number-app/static/js/2.4fcab02c.chunk.js",
-    "static/js/2.4fcab02c.chunk.js.map": "/number-app/static/js/2.4fcab02c.chunk.js.map",
-    "static/js/3.513d1f2b.chunk.js": "/number-app/static/js/3.513d1f2b.chunk.js",
-    "static/js/3.513d1f2b.chunk.js.map": "/number-app/static/js/3.513d1f2b.chunk.js.map",
+    "main.js": "/number-app/static/js/main.6a3a7eec.chunk.js",
+    "main.js.map": "/number-app/static/js/main.6a3a7eec.chunk.js.map",
+    "runtime-main.js": "/number-app/static/js/runtime-main.3e841581.js",
+    "runtime-main.js.map": "/number-app/static/js/runtime-main.3e841581.js.map",
+    "static/js/2.317da01b.chunk.js": "/number-app/static/js/2.317da01b.chunk.js",
+    "static/js/2.317da01b.chunk.js.map": "/number-app/static/js/2.317da01b.chunk.js.map",
+    "static/js/3.6bae17a7.chunk.js": "/number-app/static/js/3.6bae17a7.chunk.js",
+    "static/js/3.6bae17a7.chunk.js.map": "/number-app/static/js/3.6bae17a7.chunk.js.map",
     "index.html": "/number-app/index.html",
     "static/css/main.48109129.chunk.css.map": "/number-app/static/css/main.48109129.chunk.css.map",
-    "static/js/2.4fcab02c.chunk.js.LICENSE.txt": "/number-app/static/js/2.4fcab02c.chunk.js.LICENSE.txt"
+    "static/js/2.317da01b.chunk.js.LICENSE.txt": "/number-app/static/js/2.317da01b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.36578b31.js",
-    "static/js/2.4fcab02c.chunk.js",
+    "static/js/runtime-main.3e841581.js",
+    "static/js/2.317da01b.chunk.js",
     "static/css/main.48109129.chunk.css",
-    "static/js/main.86f82423.chunk.js"
+    "static/js/main.6a3a7eec.chunk.js"
   ]
 }
